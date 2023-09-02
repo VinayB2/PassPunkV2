@@ -1,0 +1,28 @@
+.reg-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.m-btm{
+    margin-bottom: 20px;
+}
+.payment{
+    text-decoration: none;
+    color: white;
+    background-color: #0b5ed7;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.flex-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .card-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background:linear-gradient(#8ff5dd,#d59cfc3f);
+      }
+      .card{
+        border-radius: 10px;
+        background-color: aliceblue;
+        box-shadow: 0px 0px 3px 2px #a4cbec;
+      }
+      .justify{
+        text-align: justify;
+      }
+      .qr-code {
+        margin: 0 0;
+        width: 200;
+        height: 200;
+      }
+      .qr-image{
+        border-radius: 10px 10px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card" style="width: 18rem">
+        <img class="qr-image" src="<%- qrImage %>" alt="Bus Image" />
+        <div class="card-body">
+          <h5 class="card-title">QR Code</h5>
+          <p class="card-text justify">
+            Scan the QR code to complete your payment. make sure to provide registered details while payment.
+          </p>
+          <a href="/" class="btn btn-primary">Home</a>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bus Pass Verification system</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/styles/style.css" />
+    <style>
+      .pricingclass {
+        margin: 0 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
+      >
+        <div class="col-md-3 mb-2 mb-md-0 logo-text">
+          <a
+            href="/"
+            class="d-inline-flex link-body-emphasis text-decoration-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-bus-front"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H7Zm1-6c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9c1.876 0 3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44.303 44.303 0 0 0 8 4Zm0-1c-1.837 0-3.353.107-4.448.22a.5.5 0 1 1-.104-.994A44.304 44.304 0 0 1 8 2c1.876 0 3.426.109 4.552.226a.5.5 0 1 1-.104.994A43.306 43.306 0 0 0 8 3Z"
+              />
+              <path
+                d="M15 8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1V2.64c0-1.188-.845-2.232-2.064-2.372A43.61 43.61 0 0 0 8 0C5.9 0 4.208.136 3.064.268 1.845.408 1 1.452 1 2.64V4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v3.5c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2V8ZM8 1c2.056 0 3.71.134 4.822.261.676.078 1.178.66 1.178 1.379v8.86a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 11.5V2.64c0-.72.502-1.301 1.178-1.379A42.611 42.611 0 0 1 8 1Z"
+              />
+            </svg>
+          </a>
+        </div>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
+          <li><a href="#pricing" class="nav-link px-2">Register</a></li>
+          <li><a href="#accordionExample" class="nav-link px-2">Issues</a></li>
+          <li><a href="/contact" class="nav-link px-2">Contact</a></li>
+        </ul>
+      </header>
+    </div>
+
+    <div class="px-4 py-5 my-5 text-center main hero">
+      <img
+        class="d-block mx-auto mb-4 main-bus-img"
+        src="/images/bus02.png"
+        alt="Bus Image"
+        width="150"
+        height="140"
+      />
+      <h1 class="display-5 fw-bold">Pass-Punk</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          Welcome to our website, your one-stop solution for bus pass
+          verification services! At <strong>Pass-Punk</strong>, we understand
+          the importance of efficient and reliable bus pass verification.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a href="/verifyPass" class="btn btn-primary btn-lg px-4 gap-3"
+            >Verify Pass</a
+          >
+          <a href="/view" class="btn btn-outline-secondary btn-lg px-4"
+            >View Pass</a
+          >
+        </div>
+      </div>
+    </div>
+    <hr class="pricing-hr" />
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center" id="pricing">
+      <h2 class="display-4 fw-normal">Pricing</h2>
+      <p class="fs-5 text-muted">
+        Discover our competitive and transparent pricing, tailored to meet your
+        needs. We strive to provide exceptional services at affordable
+        rates.
+      </p>
+    </div>
+    <div class="pricing">
+      <div class="row row-cols-1 row-cols-md-1 mb-1 text-center">
+        <div class="col">
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col pricing-card">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Silver</h4>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title pricing-card-title">₹1,000</h3>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>1 user included</li>
+                    <li>Valid for 1 month</li>
+                    <li>Help center access</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col pricing-card">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-bg-primary border-primary">
+                  <h4 class="my-0 fw-normal">Diamond</h4>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title pricing-card-title">₹10,000</h3>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>1 user included</li>
+                    <li>Valid for 1 year</li>
+                    <li>Help center access</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col pricing-card">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Gold</h4>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title pricing-card-title fontw-100">
+                    ₹5,000
+                  </h3>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>1 user included</li>
+                    <li>Valid for 6 months</li>
+                    <li>Help center access</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            href="/register"
+            type="button"
+            class="w-40 btn btn-lg btn-outline-primary register-btn"
+            >Register</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="false"
+            aria-controls="collapseOne"
+          >
+            Issues in viewing the bus pass.
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <ul>
+              <li>
+                <strong
+                  >Make sure you have completed the payment process.</strong
+                >
+              </li>
+              <li>Make sure you have a valid bus pass.</li>
+              <li>
+                Make sure to enter the registered phone number and secret pin.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Authorization
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            Once our techincal team validates your payment followed by
+            authorizing it, your bus pass will be generated!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Furthur issues
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>For any Furthur issues,</strong> feel free to contact us
+            <a href="mailto:sangameshvu136@gmail.com">click here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="contact">
+      <p>For any queries, Contact us</p>
+      <a href="mailto:team.lunaticbyte@gmail.com"
+        >Email: team.lunaticbyte@gmail.com</a
+      >
+      <p>©️ copyright, Inc</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

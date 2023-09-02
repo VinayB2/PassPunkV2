@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/IDCard.css" />
+    <title>ID Card</title>
+  </head>
+  <style>
+    .plan{
+      height: 40px;
+      width: auto;
+      margin: 21px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div>
+        <div class="card">
+          <img src="<%- plan %>" alt="Type" class="plan">
+          <div class="top">
+            <img src="data:image/jpeg;base64,<%= imageData %>" />
+          </div>
+          <div class="ename">
+            <p class="p1"><%- holderName %></p>
+          </div>
+          <div class="edetails">
+            <div class="Address"><b>Address</b> : <%- holderAddress %></div>
+            <br>
+            <p><b>Mobile No</b> : <%- phoneNo %></p>
+          </div>
+          <div class="qr">
+            <img src="./images/qrcode.png" alt="qr" />
+          </div>
+          <div class="email">
+            <p><%- holderEmail %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

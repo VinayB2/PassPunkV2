@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.opaque{
+    background-color: #ffffff4a;
+}
+body{
+    background: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-bus-img{
+    border-radius: 50%;
+    padding: 2px;
+}
+body{
+    background-color: rgb(246, 246, 246);
+}
+.register-btn{
+    background-color: #0d6efd;
+    color: white;
+    margin-bottom: 20px;
+}
+.logo-text{
+    padding: 0 10%;
+    font-weight: bold;
+    font-size: 20px;
+}
+footer{
+    margin-top: 50px;
+    background-color: #030b1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-header.pricing-card-title{
+    background-color: #0d6efd;
+    color: white;
+}
+.pricing-hr{
+    margin: 0 10%;
+}
+footer a,footer p{
+    color: rgb(125, 123, 139);
+    text-decoration: none;
+    margin: 0;
+    padding: 10px 0 20px 0;
+}
+.pricing{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}

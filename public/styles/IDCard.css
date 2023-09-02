@@ -1,0 +1,89 @@
+*{
+    margin:00px;
+    padding: 00px;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    background: url("../images/OPFG1K0.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.card{   
+    height: 375px;
+    width:225px;
+    position: relative;
+    border-radius:25px;
+    background-image:url('../images/bg03.png');
+    background-size: 225px 375px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 4px 2px #5c5c5c;
+}
+.companyname{
+    color:#252524;
+    padding: 10px 0px 0px 4px;
+    font-size:20px;
+    font-weight: bold;
+}
+.tab {padding-right:30px;}
+.top img{
+    height: 90px;
+    width:90px;
+    background-color:#e6ebe0;
+    border-radius:57px;
+    position: absolute;
+    top: 12%;
+    left: 32%;
+    object-fit: content;
+    border:3px solid rgba(255 , 255 , 255 , .2);  
+}
+.ename{
+    position: absolute;
+    top: 160px;
+    text-align: center;
+    width: 100%;
+    color:white;
+    font-size:20px;
+    font-weight: bold;
+}
+.edetails{
+    position: absolute;
+    top: 212px;
+    text-transform:capitalize;
+    font-size: 13px;
+    margin-left: 5px;
+}
+.qr img{
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    margin:5px; 
+}
+.qr{
+    text-align: center;
+    position: absolute;
+    top:75%;
+    left: 129px;
+}
+.email{
+    position: absolute;
+    width: 100%;
+    bottom: 8px;
+}
+.email>p{
+    color: #6d6d6d;
+    font-size: 10px;
+    text-align: center;
+}

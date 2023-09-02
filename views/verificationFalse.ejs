@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verification Successful</title>
+    <link rel="stylesheet" href="/styles/verificationFalse.css" />
+  </head>
+  <body onload="audio()">
+    <div class="container">
+      <div class="popup open-popup">
+        <img src="/images/crossMark3.jpeg"/>
+        <h2>verification Failed</h2>
+        <p>Your pass is invalid! plese scan the valid pass</p>
+        <a href="/verifyPass">OK</a>
+      </div>
+  </div>
+  <script>
+    function audio(){
+      var audio = new Audio('/audio/invalidAud.mpeg');
+      audio.play();
+    }
+  </script>
+  </body>
+
+</html>

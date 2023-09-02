@@ -1,0 +1,17 @@
+const express = require("express");
+const router = express.Router();
+const contoller = require("../controllers/appController");
+const multer = require("multer");
+const storage = multer.memoryStorage();
+const upload = multer({ storage: storage });
+router.get("/admin",contoller.admin);
+router.get("/", contoller.home);
+router.get("/register", contoller.registerGet);
+router.get("/view", contoller.viewPassGet);
+router.get("/contact", contoller.viewContact);
+router.get("/verifyPass", contoller.verifyPassGet);
+router.post("/admin/authorise", contoller.authorizeUserPost);
+router.post("/register", upload.single("image"),contoller.registerPost);
+router.post("/view", contoller.viewPassPost);
+router.post("/verifyPass",contoller.verifyPassPost);
+module.exports = router;
